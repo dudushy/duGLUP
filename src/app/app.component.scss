@@ -1,0 +1,87 @@
+@import "/src/styles.scss";
+
+app-root {
+  height: 100%;
+}
+
+header {
+  padding: 1%;
+  border-radius: 10px;
+
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $danger;
+  }
+
+  nav {
+    padding: 1%;
+    margin-top: 1%;
+
+    a {
+      cursor: pointer;
+      padding: 1%;
+      margin: 0.5%;
+      border-radius: 5px;
+      color: $dark;
+      font-weight: bolder;
+      transition: 0.2s;
+      background-color: $medium;
+      border: 1px solid $dark;
+      // font-size: 1vw;
+      opacity: 0.8;
+      box-shadow: 0 0 5px $light;
+    }
+    a:hover {
+      transition: 0.2s;
+      background-color: $dark;
+      color: $danger;
+      border: 1px solid $light;
+      opacity: 0.9;
+    }
+    a:active {
+      transition: 0.1s;
+      color: $dark;
+      background-color: $danger;
+      opacity: 1;
+    }
+    a[isOn="true"] {
+      transition: 0.1s;
+      color: $light;
+      background-color: $danger;
+      border: 1px solid $light;
+      opacity: 1;
+    }
+  }
+}
+
+footer {
+  padding: 1%;
+  border-radius: 10px;
+
+  #heart {
+    color: $danger;
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $tertiary;
+    background-color: rgba($dark, 0.4);
+    padding: 0.5%;
+    border-radius: 10px;
+    margin: 0.5%;
+    border: 1px dotted $danger;
+    animation: rainbow-color 5s linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    box-shadow: 0 0 5px $light;
+    transition: 0.1s;
+  }
+}

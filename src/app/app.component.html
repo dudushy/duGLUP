@@ -1,0 +1,26 @@
+<header theme="dark">
+  <h1>
+    <a href="https://dudushy.github.io/template-ng/" target="_blank">template-ng</a>
+  </h1>
+  <hr>
+  <nav>
+    <a *ngFor="let page of router.config" (click)="redirectTo(page.path, title)" [attr.isOn]="GVS.getVar('current_url') == page.path">{{page.path}}</a>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer theme="dark">
+  <hr>
+  <h1>
+    Made with <span id="heart">&#10084;</span>
+    <br>
+    by
+    <p>
+      <a href="https://github.com/dudushy" target="_blank">
+        dudushy
+      </a>
+    </p>
+
+  </h1>
+</footer>
