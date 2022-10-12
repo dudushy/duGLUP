@@ -5,10 +5,10 @@ echo $TITLE 'setup config...'
 echo $TITLE '- - - - - - - - - - - - - - - - - - - - - - - - - -'
 #* vars
 
-PAGE_URL='https://dudushy.github.io/template-ng/'
+PAGE_URL='https://dudushy.github.io/duGLUP/'
 echo $TITLE '- PAGE_URL=' $PAGE_URL
 
-PROJECT_NAME='template-ng'
+PROJECT_NAME='duGLUP'
 echo $TITLE '- PROJECT_NAME=' $PROJECT_NAME
 
 COMMIT_MESSAGE='`build.sh`'
