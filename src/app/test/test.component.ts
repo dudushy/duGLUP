@@ -11,6 +11,8 @@ import { GlobalVariablesService } from '../services/global-variables.service';
 export class TestComponent implements OnInit {
   title = 'TestComponent';
 
+  gameGrid: any = {};
+
   constructor(
     public GVS: GlobalVariablesService,
     private cdr: ChangeDetectorRef,
@@ -21,6 +23,10 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(`[${this.title}#ngOnInit]`);
+
+    this.gameGrid.rows = Array(6);
+    this.gameGrid.columns = Array(5);
+    console.log(`[${this.title}#constructor] gameGrid`, this.gameGrid);
   }
 
   updateView() {

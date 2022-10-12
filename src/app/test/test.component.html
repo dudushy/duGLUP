@@ -1,3 +1,12 @@
 <div id="content" theme="dark">
-  <p>test works!</p>
+  <input id="word" type="text" value="teste">
+  <table *ngIf="gameGrid != undefined" id="gameGrid">
+    <tr *ngFor="let row of gameGrid.rows index as rowIndex">
+      <td class="box" *ngFor="let column of gameGrid.columns index as columnIndex">
+        <div class="letterDiv">
+          <input class="letter" id="r{{rowIndex}}-c{{columnIndex}}" maxlength="1" type="text" value="">
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>

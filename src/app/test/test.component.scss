@@ -1,5 +1,37 @@
 @import "/src/styles.scss";
 
 #content {
-  height: 46.5%;
+  // height: 46.5%;
+
+  table {
+    height: 100%;
+    width: 100%;
+  }
+
+  #word {
+    padding: 1%;
+    margin: 1%;
+    font-size: 3vmax;
+    text-align: center;
+    background-color: $success;
+  }
+
+  .letterDiv {
+    border: 1px solid $light;
+    background-color: $tertiary;
+    background: $tertiary;
+    border-radius: 15px;
+    padding-block: 4%;
+  }
+
+  .letter {
+    all: none;
+    background-color: transparent;
+    border: none;
+    // padding: 1%;
+    color: $dark;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1vmax;
+  }
 }
