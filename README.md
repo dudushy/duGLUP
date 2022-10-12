@@ -1,6 +1,5 @@
-<!--! If you are using this as a template, please replace 'template-ng' in all files to your 'PROJECT_NAME'! -->
-# template-ng
-Template for Angular projects.
+# duGLUP
+Nave-Espacial
 ---
 
 ## Prerequisites:
@@ -19,7 +18,7 @@ Template for Angular projects.
 ## Steps:
 1. Create new project
     ```bash
-    ng new template-ng
+    ng new duGLUP
     ? Would you like to share anonymous usage data about this project with the Angular Team at
     Google under Google’s Privacy Policy at https://policies.google.com/privacy. For more
     details and how to change this setting, see https://angular.io/analytics. No
